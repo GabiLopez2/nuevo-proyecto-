@@ -19,15 +19,23 @@ p{
 
 }  */
 .cuerpo{
-    background-image: linear-gradient(to bottom,#9dbded 60%,#131a22);
+    background-image: linear-gradient(to bottom,#598cd3 60%,#9a85ef);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    
+}
+.conversor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5%;
+    font-size: 25px;
+    
 }
 h1{
     font-family: 'Times New Roman', Times, serif;
-    display: flex;
-    flex-direction: column;
     text-align: center;
     font-size: 50px;
     padding: 40px;
@@ -38,51 +46,60 @@ p{
     flex-direction: column;
     align-items: center;
     font-size: 30px;
-    border-top: 3px solid #d4e3d3;
-    border-left:3px solid #d3e8d1;
-    border-bottom: 3px solid #e4ebdf;
-    border-right: 3px solid #edf1ea;
+    border-top: 3px solid #fdfffd;
+    border-left:3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #fdfffb;
     border-radius: 30px;
     padding: 10px;
     width: auto;
 }
-.formulario{
 
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 10%;
-    font-size: 25px;
-    
-}
-.formulario label{
+.conversor label{
     padding: 10px;
 }
-.formulario input{
+.conversor input{
     padding: 10px;
     font-size: 29px;
+    margin-top: 20px;
 }
-.formulario select option{
+.conversor select option{
     font-size: 25px;
 }
-.formulario select{
+.conversor select{
     font-size: 25px;
 }
-.formulario button{
+.conversor button{
     font-size: 25px;
     padding: 10px;
-    margin-left: 10px;
+    margin-top: 20px;
     border-radius: 15px;
 }
 .footer{
     display: flex;
-    margin-top: 650px;
+    margin-top: 400px;
 }
 #botonLimpiar{
-    display: flex;
     font-size: 24px;
     padding: 10px;
     border-radius: 15px;
-    margin-left: 200px;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .cuerpo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .conversor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .conversor input{
+        display: flex;
+        align-items: center;
+    }
 }
