@@ -22,7 +22,7 @@ p{
     background-image: linear-gradient(to bottom,#598cd3 60%,#9a85ef);
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: rgb(0, 0, 0);
     
 }
 .conversor{
